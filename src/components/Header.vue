@@ -1,48 +1,20 @@
 <template>
     <header id="jumbotron-header">
       <Navbar />
+      <HeaderContent />
     </header>
 </template>
 
 <script>
 import Navbar from './Navbar.vue';
+import HeaderContent from './HeaderContent.vue';
 
 export default {
   name: "Header",
   components: {
-    Navbar
+    Navbar,
+    HeaderContent
   },
-  data() {
-    return {
-      navMenu: [
-        {
-          text: "home",
-          url: "#home",
-        },
-        {
-          text: "pages",
-          url: "#pages",
-        },
-        {
-          text: "blog",
-          url: "#blog",
-        },
-        {
-          text: "shop",
-          url: "#shop",
-        },
-        {
-          text: "events",
-          url: "#events",
-        },
-        {
-          text: "elements",
-          url: "#elements",
-        }
-      ]
-    }
-  }
-
 };
 </script>
 

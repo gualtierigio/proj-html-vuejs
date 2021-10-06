@@ -10,10 +10,10 @@
                 </div>{{element.text}}
               </a>
             </li>
-            <li>
+            <li class="fas-elements">
               <a href="#"><i class="fas fa-search"></i></a>
             </li>
-            <li>
+            <li class="fas-elements">
               <a href="#"><i class="fas fa-bars"></i></a>
             </li>
           </ul>
@@ -65,18 +65,26 @@ export default {
 
 #top-header{
   width: 100%;
-  height: 160px;
+  height: 100px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 50px;
+}
+
+h1{
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 nav{
   text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+
   ul{
     li{
       display: inline-block;
-      padding: 0 20px;
+      padding-left: 10px;
       a{
         div{
         width: 20px;
@@ -96,8 +104,14 @@ nav{
   }
 }
 
+// logo red
+
 a:hover{
-  color: $red-color;
+    color: $red-color;
+}
+
+.fas-elements{
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 1150px) {
