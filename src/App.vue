@@ -27,6 +27,7 @@ export default {
 
 #app{
   font-family: $font-page;
+  min-width: 400px;
 }
 
 

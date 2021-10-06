@@ -4,7 +4,15 @@
         <a href="#"><h1>Everlead<span class="red-dot">.</span></h1></a>
         <nav>
           <ul>
-            <li v-for="(element, index) in navMenu" :key="index">{{element.index}}</li>
+            <li id="collaps-menu" v-for="(element, index) in navMenu" :key="index">
+              <a href="{link.url}">{{element.text}}</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -17,12 +25,30 @@ export default {
   data() {
     return {
       navMenu: [
-        'home',
-        'pages',
-        'blog',
-        'shop',
-        'events',
-        'elements'
+        {
+          text: "home",
+          url: "#home",
+        },
+        {
+          text: "pages",
+          url: "#pages",
+        },
+        {
+          text: "blog",
+          url: "#blog",
+        },
+        {
+          text: "shop",
+          url: "#shop",
+        },
+        {
+          text: "events",
+          url: "#events",
+        },
+        {
+          text: "elements",
+          url: "#elements",
+        }
       ]
     }
   }
@@ -45,20 +71,28 @@ export default {
 
 #top-header{
   width: 100%;
-  height: 200px;
+  height: 160px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
+  padding: 0 30px;
 }
 
 nav{
+  text-transform: uppercase;
   ul{
     li{
       display: inline-block;
-      width: 30px;
-      border: 1px solid red;
       padding: 0 20px;
+      a:hover{
+        color: $red-color;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #collaps-menu{
+    display: none;
   }
 }
 
