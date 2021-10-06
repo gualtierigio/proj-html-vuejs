@@ -1,4 +1,4 @@
-# vue-landing-page
+# proj-html-vuejs
 
 ## Project setup
 ```
