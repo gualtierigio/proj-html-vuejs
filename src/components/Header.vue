@@ -5,7 +5,11 @@
         <nav>
           <ul>
             <li id="collaps-menu" v-for="(element, index) in navMenu" :key="index">
-              <a href="{link.url}">{{element.text}}</a>
+              <a href="{link.url}">
+                <div id="arrow">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>{{element.text}}
+              </a>
             </li>
             <li>
               <a href="#"><i class="fas fa-search"></i></a>
@@ -83,14 +87,30 @@ nav{
     li{
       display: inline-block;
       padding: 0 20px;
+      a{
+        div{
+        width: 20px;
+        display: inline-block;
+        i{
+          display: none;
+        }
+      }
+      }
       a:hover{
         color: $red-color;
+        div i{
+          display: block;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 1024px) {
+a:hover{
+  color: $red-color;
+}
+
+@media screen and (max-width: 1150px) {
   #collaps-menu{
     display: none;
   }
