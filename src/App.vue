@@ -26,7 +26,7 @@ export default {
 @import './style/variables.scss';
 
 #app{
-  font-family: $font-page;
+  font-family: $font-Merriweather;
   min-width: 400px;
 }
 

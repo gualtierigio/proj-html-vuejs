@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12 col-lg-7 d-flex align-items-center">
                     <div class="our-team__content">
-                        <h1>Our team<span class="red-dot">.</span></h1>
+                        <h1>Our Team<span class="red-dot">.</span></h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque delectus deserunt recusandae tempore quaerat quod.</p>
                         <div class="buttons d-flex">
                             <div class="button-custom d-flex">
