@@ -1,6 +1,6 @@
 <template>
     <header id="jumbotron-header">
-      <Navbar :propNavMenu='navMenu'/>
+      <Navbar :propNavMenu ='navMenu'/>
       <HeaderContent />
     </header>
 </template>
