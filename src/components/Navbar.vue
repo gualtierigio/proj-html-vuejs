@@ -3,7 +3,7 @@
         <a href="#"><h1>Everlead<span class="red-dot">.</span></h1></a>
         <nav>
           <ul>
-            <li id="collaps-menu" v-for="(element, index) in navMenu" :key="index">
+            <li id="collaps-menu" v-for="(element, index) in propNavMenu" :key="index">
               <a href="{link.url}">
                 <div>
                   <i class="fas fa-long-arrow-alt-right"></i>
@@ -24,37 +24,9 @@
 <script>
 export default {
   name: "Navbar",
-  data() {
-    return {
-      navMenu: [
-        {
-          text: "home",
-          url: "#home",
-        },
-        {
-          text: "pages",
-          url: "#pages",
-        },
-        {
-          text: "blog",
-          url: "#blog",
-        },
-        {
-          text: "shop",
-          url: "#shop",
-        },
-        {
-          text: "events",
-          url: "#events",
-        },
-        {
-          text: "elements",
-          url: "#elements",
-        }
-      ]
-    }
+  props: {
+    'propNavMenu' : Array
   }
-
 };
 </script>
 
