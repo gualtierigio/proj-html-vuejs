@@ -57,16 +57,19 @@ export default {
       contacts: [
         {
           info: "475 BigBlue Street, NY 10013",
+          typeOf: "adress",
           infoLogo: "<i class=\"fas fa-map-marker-alt\"></i>",
-          url: "#address"
+          url: "#adress"
         },
         {
           info: "(351)5512-2579",
+          typeOf: "phone",
           infoLogo: "<i class=\"fas fa-phone-alt\"></i>",
           url: "#phone"
         },
         {
           info: "everlead@mikado.com",
+          typeOf: "mail",
           infoLogo: "<i class=\"far fa-envelope\"></i>",
           url: "#mail"
         }
