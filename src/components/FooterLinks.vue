@@ -31,6 +31,13 @@ p{
   color: $white-color-2-opac;
   font-weight: 300;
   font-size: 0.8rem;
+  a{
+    text-decoration: none;
+    color: $white-color-2-opac;
+  }
+  a:hover{
+    color: $red-color;
+  }
 }
 .red-line{
   width: 30px;

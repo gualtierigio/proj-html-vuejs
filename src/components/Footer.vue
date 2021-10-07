@@ -86,6 +86,7 @@ footer{
   background-color: $black-color-2;
   width: 100%;
   padding-top: 100px;
+  min-width: 620px;
 }
 
 .page-wrap{
