@@ -7,14 +7,33 @@
       </div>
       <div class="specialties_props-wrapper">
           <div class="container">
-              <div class="row">
-                  <div v-for="(element, index) in propSpecialties" :key="index" class="col-6 col-lg-3">
-                      <img :src="element.icon" alt="icon specialties" class="icons">
+              <div class="row gx-5">
+                  <!-- <div v-for="(element, index) in propSpecialties" :key="index" class="col-6 col-lg-3 specialties__content">
+                      <img :src="element.icon" alt="icon specialties">
                       <h3>{{element.title}}</h3>
                       <p>{{element.text}}</p>
+                  </div> -->
+                  <div class="col-6 col-lg-3 specialties__content">
+                      <img src="../assets/svg/svg-0.svg" alt="icon specialties">
+                      <h3>Knowing</h3>
+                      <p>Lorem ipsum dolor sit amet, quis consect.</p>
+                  </div>
+                  <div class="col-6 col-lg-3 specialties__content">
+                      <img src="../assets/svg/svg-1.svg" alt="icon specialties">
+                      <h3>Selling</h3>
+                      <p>Lorem ipsum dolor sit amet, quis consect.</p>
+                  </div>
+                  <div class="col-6 col-lg-3 specialties__content">
+                      <img src="../assets/svg/svg-2.svg" alt="icon specialties">
+                      <h3>Learning</h3>
+                      <p>Lorem ipsum dolor sit amet, quis consect.</p>
+                  </div>
+                  <div class="col-6 col-lg-3 specialties__content">
+                      <img src="../assets/svg/svg-3.svg" alt="icon specialties">
+                      <h3>Contact</h3>
+                      <p>Lorem ipsum dolor sit amet, quis consect.</p>
                   </div>
               </div>
-              <img src="../assets/svg/svg-0.svg" alt="">
           </div>
       </div>
 
@@ -38,7 +57,8 @@ export default {
     width: 90%;
     margin: 0 auto;
     background-color: $total-white;
-    padding: 50px 80px 150px 80px;
+    padding: 50px 100px 150px 100px;
+    min-width: 620px;
 }
 
 .specialties_intro{
@@ -56,12 +76,24 @@ export default {
 }
 
 .specialties_props-wrapper{
-    margin-top: 50px;
-    border: 1px solid red;
+    margin-top: 100px;
 }
 
-.icons{
-    width: 300px;
+.specialties__content{
+    text-align: center;
+    h3{
+       font-size: 1rem;
+       font-weight: bold;
+       margin-bottom: 20px;
+    }
+    p{
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $gray-text-color-1;
+    }
+    img{
+        margin-bottom: 50px;
+    }
 }
 
 .red-line{

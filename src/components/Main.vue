@@ -24,17 +24,17 @@ export default {
         },
         {
           icon: '../assets/svg/svg-1.svg',
-          title: 'Knowing',
+          title: 'Selling',
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         },
         {
-          icon: '../assets/svg/svg-5.svg',
-          title: 'Knowing',
+          icon: '../assets/svg/svg-2.svg',
+          title: 'Learning',
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         },
         {
-          icon: '../assets/svg/svg-9.svg',
-          title: 'Knowing',
+          icon: '../assets/svg/svg-3.svg',
+          title: 'Contact',
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         }
       ]
@@ -52,7 +52,6 @@ export default {
 .base-page{
   height: 100vh;
   background-color: $white-color-6;
-  position: relative;
 }
 
 
