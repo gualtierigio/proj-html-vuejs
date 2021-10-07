@@ -3,25 +3,29 @@
         <div class="arrows">
           <i class="fas fa-long-arrow-alt-left"></i>
         </div>
-        <div class="our-team d-flex align-items-end">
-            <div class="our-team__content">
-                <h1>Our team<span class="red-dot">.</span></h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste, reprehenderit ipsam assumenda aliquid architecto inventore possimus ut? Nulla quis quam illo reprehenderit. Neque delectus deserunt recusandae tempore quaerat quod!</p>
-                <div class="buttons d-flex">
-                    <div class="button-custom d-flex">
-                        <div class="text-button">
-                            <h6>read more</h6>
-                        </div>
-                        <div class="arrow-button">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                    <div class="button-custom d-flex">
-                        <div class="text-button">
-                            <h6>read more</h6>
-                        </div>
-                        <div class="arrow-button">
-                            <i class="fas fa-long-arrow-alt-right"></i>
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-12 col-lg-7 d-flex align-items-center">
+                    <div class="our-team__content">
+                        <h1>Our team<span class="red-dot">.</span></h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque delectus deserunt recusandae tempore quaerat quod.</p>
+                        <div class="buttons d-flex">
+                            <div class="button-custom d-flex">
+                                <div class="text-button">
+                                    <h6>read more</h6>
+                                </div>
+                                <div class="arrow-button">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                            <div class="button-custom left-button d-flex">
+                                <div class="text-button">
+                                    <h6>purchase</h6>
+                                </div>
+                                <div class="arrow-button-left">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +49,6 @@ export default {
 
 #header-content-wrap{
     margin-top: 100px;
-    border: 1px solid red;
     width: 100%;
     height: 65vh;
     min-width: 620px;
@@ -57,58 +60,51 @@ export default {
     height: 100%;
     width: 60px;
     padding: 10px;
-    border: 1px solid red;
     i{
         font-size: 40px;
     }
 }
 
-.our-team{
-    height: 100%;
-    width: calc(100% - 120px);
-    border: 1px solid red;
-}
-
 .our-team__content{
-    width: 80%;
-    height: 70%;
     padding: 0 20px;
-    border: 1px solid red;
     h1{
         font-size: 5.5rem;
         font-weight: bold;
+        margin-bottom: 40px;
     }
     p{
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         color: $gray-text-color-1;
+        margin-bottom: 40px;
     }
-}
-
-.buttons{
-    padding: 0 20px;
-    border: 1px solid red;
 }
 
 .button-custom{
     height: 60px;
     width: 200px;
-    margin-left: 20px;
     background-color: $total-white;
     padding: 10px 0;
     h6{
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: bold;
+        margin-bottom: 0;
     }
 }
 
-.text-button,.arrow-button{
+.left-button{
+    background-color: $red-color;
+    margin-left: 20px;
+    color: $total-white;
+}
+
+.text-button,.arrow-button,.arrow-button-left{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     i{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -116,10 +112,18 @@ export default {
     width: 100%;
 }
 
-.arrow-button{
-    border-left: 1px solid $total-black;
+.arrow-button-left,.arrow-button{
     width: 40%;
 }
+
+.arrow-button{
+    border-left: 1px solid $total-black;
+}
+
+.arrow-button-left{
+    border-left: 1px solid $total-white;
+}
+
 
 .red-dot{
   color: $red-color;
