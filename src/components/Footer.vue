@@ -10,6 +10,9 @@
           </div>
         </div>
       </div>
+      <div class="copyright d-flex align-items-center">
+        <p>Copyright Everlead by giosby</p>
+      </div>
     </footer>
 </template>
 
@@ -38,7 +41,6 @@ export default {
 
 footer{
   background-color: $black-color-2;
-  height: 50vh;
   width: 100%;
   padding-top: 100px;
 }
@@ -47,6 +49,18 @@ footer{
   border: 1px solid red;
   width: 65%;
   margin: 0 auto;
+}
+
+.copyright{
+  height: 40px;
+  background-color: $red-color;
+  justify-content: center;
+  color: $total-white;
+  opacity: 0.8;
+  p{
+    margin: 0;
+    font-size: 0.6rem;
+  }
 }
 
 </style>

@@ -2,6 +2,14 @@
     <div class="col-6 col-lg-3 mb-3">
         <h3>Twitter</h3>
         <div class="red-line"></div>
+        <div class="d-flex justify-content-between">
+            <i class="fab fa-twitter"></i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto libero ea incidunt corporis illo nostrum eligendi molestiae magnam iure at.</p>
+        </div>
+        <div class="d-flex justify-content-between">
+            <i class="fab fa-twitter"></i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto libero ea incidunt corporis illo nostrum eligendi molestiae magnam iure at.</p>
+        </div>
     </div>
 </template>
 
@@ -32,6 +40,11 @@ p{
   height: 1px;
   background-color: $red-color;
   margin: 15px 0;
+}
+
+i{
+    padding-right: 30px;
+    color: $red-color;
 }
 
 </style>
