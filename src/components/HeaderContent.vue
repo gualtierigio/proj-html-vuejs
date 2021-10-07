@@ -8,11 +8,22 @@
                 <h1>Our team<span class="red-dot">.</span></h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste, reprehenderit ipsam assumenda aliquid architecto inventore possimus ut? Nulla quis quam illo reprehenderit. Neque delectus deserunt recusandae tempore quaerat quod!</p>
                 <div class="buttons d-flex">
-                    <div class="button">
-                        <div><h2>read more</h2></div>
-                        <div></div>
+                    <div class="button-custom d-flex">
+                        <div class="text-button">
+                            <h6>read more</h6>
+                        </div>
+                        <div class="arrow-button">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
                     </div>
-                    <div class="button"></div>
+                    <div class="button-custom d-flex">
+                        <div class="text-button">
+                            <h6>read more</h6>
+                        </div>
+                        <div class="arrow-button">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,6 +48,7 @@ export default {
     border: 1px solid red;
     width: 100%;
     height: 65vh;
+    min-width: 620px;
 }
 
 .arrows{
@@ -77,11 +89,36 @@ export default {
     border: 1px solid red;
 }
 
-.button{
-    height: 80px;
+.button-custom{
+    height: 60px;
     width: 200px;
     margin-left: 20px;
-    border: 1px solid red;
+    background-color: $total-white;
+    padding: 10px 0;
+    h6{
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}
+
+.text-button,.arrow-button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+        font-size: 2rem;
+    }
+}
+
+.text-button{
+    width: 100%;
+}
+
+.arrow-button{
+    border-left: 1px solid $total-black;
+    width: 40%;
 }
 
 .red-dot{
