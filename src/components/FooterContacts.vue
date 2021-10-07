@@ -3,7 +3,7 @@
         <h3>Contact me</h3>
         <div class="red-line"></div>
         <div v-for="(element, index) in propContacts" :key="index">
-          <p><a href="element.url">{{element.typeOf}}: {{element.info}}</a></p>
+          <p>{{element.typeOf}}: <a href="element.url">{{element.info}}</a></p>
         </div>
     </div>
 </template>
