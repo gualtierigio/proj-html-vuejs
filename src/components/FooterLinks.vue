@@ -2,12 +2,18 @@
     <div class="col-6 col-lg-3">
         <h3>Important links</h3>
         <div class="red-line"></div>
+        <p v-for="(element, index) in propLinks" :key="index">
+          <a href="element.url">{{element.text}}</a>
+        </p>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'FooterLinks'
+    name: 'FooterLinks',
+    props: {
+      'propLinks' : Array
+    }
 
 }
 </script>
@@ -25,7 +31,6 @@ p{
   color: $white-color-2-opac;
   font-weight: 300;
   font-size: 0.8rem;
-  margin-bottom: 30px;
 }
 .red-line{
   width: 30px;
