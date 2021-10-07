@@ -1,7 +1,7 @@
 <template>
     <main>
       <div class="base-page">
-        <OurSpecialties />
+        <OurSpecialties :propSpecialties="specialties" />
       </div>
     </main>
 </template>
@@ -13,6 +13,32 @@ export default {
   name: "Main",
   components: {
     OurSpecialties
+  },
+  data() {
+    return {
+      specialties: [
+        {
+          icon: '../assets/svg/svg-0.svg',
+          title: 'Knowing',
+          text: 'Lorem ipsum dolor sit amet, quis consect.'
+        },
+        {
+          icon: '../assets/svg/svg-0.svg',
+          title: 'Knowing',
+          text: 'Lorem ipsum dolor sit amet, quis consect.'
+        },
+        {
+          icon: '../assets/svg/svg-0.svg',
+          title: 'Knowing',
+          text: 'Lorem ipsum dolor sit amet, quis consect.'
+        },
+        {
+          icon: '../assets/svg/svg-0.svg',
+          title: 'Knowing',
+          text: 'Lorem ipsum dolor sit amet, quis consect.'
+        }
+      ]
+    }
   }
 
 };

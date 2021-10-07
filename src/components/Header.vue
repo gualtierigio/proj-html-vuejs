@@ -2,6 +2,7 @@
     <header id="jumbotron-header">
       <Navbar :propNavMenu ='navMenu'/>
       <HeaderContent />
+      <div class="white-bar"></div>
     </header>
 </template>
 
@@ -56,9 +57,16 @@ export default {
 #jumbotron-header{
   background-image: url(../assets/img/rev-slider-main-home-img-03.jpg);
   width: 100%;
-  height: 95vh;
   background-size: cover;
   background-position: center;
+}
+
+.white-bar{
+  width: 90%;
+  margin: 0 auto;
+  background-color: $total-white;
+  height: 100px;
+  z-index: 10;
 }
 
 </style>
