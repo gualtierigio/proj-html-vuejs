@@ -9,11 +9,12 @@
           <div class="container">
               <div class="row">
                   <div v-for="(element, index) in propSpecialties" :key="index" class="col-6 col-lg-3">
-                      <img src="element.icon" alt="">
+                      <img :src="element.icon" alt="icon specialties" class="icons">
                       <h3>{{element.title}}</h3>
                       <p>{{element.text}}</p>
                   </div>
               </div>
+              <img src="../assets/svg/svg-0.svg" alt="">
           </div>
       </div>
 
@@ -57,6 +58,10 @@ export default {
 .specialties_props-wrapper{
     margin-top: 50px;
     border: 1px solid red;
+}
+
+.icons{
+    width: 300px;
 }
 
 .red-line{

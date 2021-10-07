@@ -23,17 +23,17 @@ export default {
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         },
         {
-          icon: '../assets/svg/svg-0.svg',
+          icon: '../assets/svg/svg-1.svg',
           title: 'Knowing',
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         },
         {
-          icon: '../assets/svg/svg-0.svg',
+          icon: '../assets/svg/svg-5.svg',
           title: 'Knowing',
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         },
         {
-          icon: '../assets/svg/svg-0.svg',
+          icon: '../assets/svg/svg-9.svg',
           title: 'Knowing',
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         }
