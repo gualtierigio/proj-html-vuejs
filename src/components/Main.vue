@@ -65,7 +65,7 @@ export default {
           time: '9:00 am - 5:00 pm',
           year: '2022',
           businessType: 'Next investment',
-          img: '../assets/img/h1-blog-img-03.jpg'
+          img: '../assets/img/h1-blog-img-01.jpg'
         },
         {
           where: 'New York Coaching',
@@ -85,7 +85,7 @@ export default {
           time: '9:00 am - 5:00 pm',
           year: '2022',
           businessType: 'New Business Day',
-          img: './assets/img/h1-blog-img-03.jpg'
+          img: '../assets/img/h1-blog-img-04.jpg'
         }
       ]
     }
