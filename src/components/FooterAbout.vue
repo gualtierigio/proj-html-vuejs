@@ -43,6 +43,12 @@ export default {
   }
 }
 
+.social-custom:hover{
+  background-color: $red-color;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 h3{
   color: $total-white;
   font-size: 1.2rem;

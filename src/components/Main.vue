@@ -6,6 +6,9 @@
         <Bickford />
       </div>
       <Events :propEvents="events"/>
+      <div>
+        <CreativeLeader />
+      </div>
     </main>
 </template>
 
@@ -13,13 +16,15 @@
 import OurSpecialties from './OurSpecialties.vue';
 import Bickford from './Bickford.vue';
 import Events from './Events.vue';
+import CreativeLeader from './CreativeLeader.vue';
 
 export default {
   name: "Main",
   components: {
     OurSpecialties,
     Bickford,
-    Events
+    Events,
+    CreativeLeader
   },
   data() {
     return {

@@ -5,6 +5,7 @@
                 <div class="events-title">
                     <h2>Upcoming Events</h2>
                 </div>
+                <div class="border-shadow"></div>
                 <div v-for="(element, index) in propEvents" :key="index" class="appointment d-flex">
                     <div class="data">
                         <h6>{{element.day}}</h6>
@@ -121,6 +122,15 @@ export default {
     }
 }
 
+.border-shadow{
+    width: 100%;
+    height: 1px;
+    background-color: $white-color-5;
+    box-shadow: 5px  5px 5px #dedede,
+              -5px -5px 5px #dedede,
+               5px -5px 5px #dedede,
+              -5px  5px 5px #dedede;
+}
 
 
 </style>
