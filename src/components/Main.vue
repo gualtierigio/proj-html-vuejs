@@ -64,7 +64,8 @@ export default {
           month: 'Jan',
           time: '9:00 am - 5:00 pm',
           year: '2022',
-          businessType: 'Next investment'
+          businessType: 'Next investment',
+          img: '../assets/img/h1-blog-img-03.jpg'
         },
         {
           where: 'New York Coaching',
@@ -73,7 +74,8 @@ export default {
           month: 'Jan',
           time: '9:00 am - 5:00 pm',
           year: '2022',
-          businessType: 'Team Building'
+          businessType: 'Team Building',
+          img: '../assets/img/h1-blog-img-03.jpg'
         },
         {
           where: 'London Coaching',
@@ -82,7 +84,8 @@ export default {
           month: 'Jan',
           time: '9:00 am - 5:00 pm',
           year: '2022',
-          businessType: 'New Business Day'
+          businessType: 'New Business Day',
+          img: './assets/img/h1-blog-img-03.jpg'
         }
       ]
     }

@@ -15,7 +15,7 @@
             <div class="row">
                 <div v-for="(element, index) in propEvents" :key="index" class="col-4">
                     <div class="img-wrap">
-                        <img src="../assets/img/h1-blog-img-03.jpg" alt="">
+                        <img src="element.img" alt="">
                     </div>
                     <div class="d-flex when-where">
                         <i class="far fa-clock"></i>
@@ -65,7 +65,7 @@ export default {
 
 .when-where{
     p{
-        margin-right: 20px;
+        margin: 0 20px;
     }
     i{
         color: $red-color;
