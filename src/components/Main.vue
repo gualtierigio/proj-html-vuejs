@@ -5,7 +5,7 @@
         <img class="svg-bg" src="../assets/svg/svg-4.svg" alt="svg background">
         <Bickford />
       </div>
-      <Events />
+      <Events :propEvents="events"/>
     </main>
 </template>
 
@@ -47,19 +47,28 @@ export default {
       ],
       events: [
         {
-          icon: '../assets/svg/svg-0.svg',
-          title: 'Knowing',
-          text: 'Lorem ipsum dolor sit amet, quis consect.'
+          where: 'Mealbourne Coaching',
+          position: 'Cambrige, MA 02138,USA',
+          day: '7',
+          month: 'Jan',
+          time: '9:00 am - 5:00 pm',
+          year: '2022'
         },
         {
-          icon: '../assets/svg/svg-1.svg',
-          title: 'Selling',
-          text: 'Lorem ipsum dolor sit amet, quis consect.'
+          where: 'New York Coaching',
+          position: 'Cambrige, MA 02138,USA',
+          day: '11',
+          month: 'Jan',
+          time: '9:00 am - 5:00 pm',
+          year: '2022'
         },
         {
-          icon: '../assets/svg/svg-2.svg',
-          title: 'Learning',
-          text: 'Lorem ipsum dolor sit amet, quis consect.'
+          where: 'London Coaching',
+          position: 'Cambrige, MA 02138,USA',
+          day: '21',
+          month: 'Jan',
+          time: '9:00 am - 5:00 pm',
+          year: '2022'
         }
       ]
     }

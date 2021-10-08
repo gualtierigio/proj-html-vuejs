@@ -5,20 +5,20 @@
                 <div class="events-title">
                     <h2>Upcoming Events</h2>
                 </div>
-                <div class="appointment d-flex">
+                <div v-for="(element, index) in propEvents" :key="index" class="appointment d-flex">
                     <div class="data">
-                        <h6>07</h6>
-                        <p>Jan,2022</p>
+                        <h6>{{element.day}}</h6>
+                        <p>{{element.month}},{{element.year}}</p>
                     </div>
                     <div class="when-where">
-                        <h4>Melbourne Coaching</h4>
+                        <h4>{{element.where}}</h4>
                         <div class="d-flex">
                             <i class="far fa-clock"></i>
-                            <p>9:00 am - 5:00 pm, Jan 7,2022</p>
+                            <p>{{element.time}}, {{element.month}} {{element.day}},{{element.year}}</p>
                         </div>
                         <div class="d-flex">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>Cambrige, MA 02138,USA</p>
+                            <p>{{element.position}}</p>
                         </div>
                         <h5>read more</h5>
                     </div>
@@ -31,6 +31,9 @@
 <script>
 export default {
     name: 'Events',
+    props: {
+        'propEvents' : Array
+    }
 }
 </script>
 
@@ -40,6 +43,7 @@ export default {
 
 .page-wrap{
   width: 70%;
+  height: 70%;
   margin: 0 auto;
 }
 
