@@ -15,7 +15,7 @@
             <div class="row">
                 <div v-for="(element, index) in propEvents" :key="index" class="col-4">
                     <div class="img-wrap">
-                        <img :src="element.img" alt="">
+                        <img src="../assets/img/h1-blog-img-03.jpg" alt="">
                     </div>
                     <div class="d-flex when-where">
                         <i class="far fa-clock"></i>

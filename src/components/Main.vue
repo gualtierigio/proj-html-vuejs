@@ -121,7 +121,7 @@ export default {
 
 .svg-bg-left{
   left: 100px;
-  top: 30%;
+  top: 20%;
 }
 
 
