@@ -1,6 +1,9 @@
 <template>
-    <div class="bg-img">
+    <div class="bg-img d-flex align-items-center">
         <div class="page-wrap">
+            <div id="events-wrapper">
+
+            </div>
         </div>
     </div>
 </template>
@@ -26,6 +29,13 @@ export default {
     background-image: url(../assets/img/h1-img-09.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#events-wrapper{
+    width: 30%;
+    background-color: $gray-color-opac;
+    // altezza momentanea
+    height: 500px;
 }
 
 
