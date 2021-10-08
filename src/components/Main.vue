@@ -6,8 +6,12 @@
         <Bickford />
       </div>
       <Events :propEvents="events"/>
-      <div>
+      <div class="position-relative">
         <CreativeLeader />
+        <img class="svg-bg-left" src="../assets/svg/svg-4.svg" alt="svg background">
+        <div id="news">
+          <LatestNews />
+        </div>
       </div>
     </main>
 </template>
@@ -17,6 +21,7 @@ import OurSpecialties from './OurSpecialties.vue';
 import Bickford from './Bickford.vue';
 import Events from './Events.vue';
 import CreativeLeader from './CreativeLeader.vue';
+import LatestNews from './LatestNews.vue';
 
 export default {
   name: "Main",
@@ -24,7 +29,8 @@ export default {
     OurSpecialties,
     Bickford,
     Events,
-    CreativeLeader
+    CreativeLeader,
+    LatestNews
   },
   data() {
     return {
@@ -92,11 +98,24 @@ export default {
   position: relative;
 }
 
-.svg-bg{
+#news{
+  background-color: $white-color-5;
+  padding: 50px 0;
+}
+
+.svg-bg,.svg-bg-left{
   position: absolute;
+  filter: invert(9%) sepia(5%) saturate(21%) hue-rotate(357deg) brightness(88%) contrast(91%);
+}
+
+.svg-bg{
   right: 100px;
   top: 50%;
-  filter: invert(9%) sepia(5%) saturate(21%) hue-rotate(357deg) brightness(88%) contrast(91%);
+}
+
+.svg-bg-left{
+  left: 100px;
+  top: 50%;
 }
 
 
