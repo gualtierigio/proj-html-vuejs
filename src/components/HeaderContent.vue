@@ -63,6 +63,11 @@ export default {
     i{
         font-size: 40px;
     }
+    i:hover{
+        opacity: 0.6;
+        cursor: pointer;
+        color: $red-color;
+    }
 }
 
 .our-team__content{
@@ -90,6 +95,11 @@ export default {
         font-weight: bold;
         margin-bottom: 0;
     }
+}
+
+.button-custom:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 .left-button{

@@ -36,7 +36,6 @@
               </div>
           </div>
       </div>
-
   </div>
 </template>
 
@@ -95,6 +94,8 @@ export default {
         margin-bottom: 50px;
     }
 }
+
+// specific implementation
 
 .red-line{
   width: 100px;

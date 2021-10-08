@@ -2,17 +2,20 @@
     <main>
       <div class="base-page">
         <OurSpecialties :propSpecialties="specialties" />
+        <Bickford />
       </div>
     </main>
 </template>
 
 <script>
 import OurSpecialties from './OurSpecialties.vue';
+import Bickford from './Bickford.vue';
 
 export default {
   name: "Main",
   components: {
-    OurSpecialties
+    OurSpecialties,
+    Bickford
   },
   data() {
     return {
