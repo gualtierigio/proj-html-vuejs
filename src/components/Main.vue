@@ -10,7 +10,7 @@
         <CreativeLeader />
         <img class="svg-bg-left" src="../assets/svg/svg-4.svg" alt="svg background">
         <div id="news">
-          <LatestNews />
+          <LatestNews :propEvents="events"/>
         </div>
       </div>
     </main>
@@ -63,7 +63,8 @@ export default {
           day: '7',
           month: 'Jan',
           time: '9:00 am - 5:00 pm',
-          year: '2022'
+          year: '2022',
+          businessType: 'Next investment'
         },
         {
           where: 'New York Coaching',
@@ -71,7 +72,8 @@ export default {
           day: '11',
           month: 'Jan',
           time: '9:00 am - 5:00 pm',
-          year: '2022'
+          year: '2022',
+          businessType: 'Team Building'
         },
         {
           where: 'London Coaching',
@@ -79,7 +81,8 @@ export default {
           day: '21',
           month: 'Jan',
           time: '9:00 am - 5:00 pm',
-          year: '2022'
+          year: '2022',
+          businessType: 'New Business Day'
         }
       ]
     }
@@ -115,7 +118,7 @@ export default {
 
 .svg-bg-left{
   left: 100px;
-  top: 50%;
+  top: 30%;
 }
 
 

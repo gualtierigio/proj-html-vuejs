@@ -1,13 +1,31 @@
 <template>
     <div class="page-wrap">
         <div class="container">
-            <div class="row">
+            <!-- title news -->
+            <div class="row mb-10">
                 <div class="col-12">
                     <div class="text-center">
                         <h1>Our Specialties<span class="red-dot">.</span></h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum debitis perferendis vitae.</p>
                         <div class="red-line"></div>
                     </div>
+                </div>
+            </div>
+            <!-- img news -->
+            <div class="row">
+                <div v-for="(element, index) in propEvents" :key="index" class="col-4">
+                    <div class="img-wrap">
+                        <img src="../assets/img/h1-blog-img-03.jpg" alt="">
+                    </div>
+                    <div class="d-flex when-where">
+                        <i class="far fa-clock"></i>
+                        <p>{{element.month}}{{element.day}},{{element.year}}</p>
+                        <i class="far fa-user"></i>
+                        <p>Armanda Doe</p>
+                    </div>
+                    <h4>{{element.businessType}}</h4>
+                    <p class="space-line">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, velit! Ullam eius quasi est inventore quidem facere.</p>
+                    <h5 class="more">read more</h5>
                 </div>
             </div>
         </div>
@@ -17,6 +35,9 @@
 <script>
 export default {
     name: 'CreativeLeader',
+    props: {
+        'propEvents' : Array
+    }
 }
 </script>
 
@@ -30,6 +51,27 @@ export default {
   margin: 0 auto;
 }
 
+.img-wrap{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 35px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.when-where{
+    p{
+        margin-right: 20px;
+    }
+    i{
+        color: $red-color;
+        font-size: 0.7rem;
+    }
+}
 
 
 
@@ -40,7 +82,6 @@ p{
     font-weight: 300;
     opacity: 0.7;
     margin-bottom: 20px;
-    line-height: 25px;
 }
 
 .red-line{
@@ -52,6 +93,20 @@ p{
 
 .red-dot{
   color: $red-color;
+}
+
+.mb-10{
+    margin-bottom: 100px;
+}
+
+.more{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.space-line{
+    line-height: 25px;
 }
 
 </style>
