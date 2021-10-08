@@ -44,6 +44,23 @@ export default {
           title: 'Contact',
           text: 'Lorem ipsum dolor sit amet, quis consect.'
         }
+      ],
+      events: [
+        {
+          icon: '../assets/svg/svg-0.svg',
+          title: 'Knowing',
+          text: 'Lorem ipsum dolor sit amet, quis consect.'
+        },
+        {
+          icon: '../assets/svg/svg-1.svg',
+          title: 'Selling',
+          text: 'Lorem ipsum dolor sit amet, quis consect.'
+        },
+        {
+          icon: '../assets/svg/svg-2.svg',
+          title: 'Learning',
+          text: 'Lorem ipsum dolor sit amet, quis consect.'
+        }
       ]
     }
   }

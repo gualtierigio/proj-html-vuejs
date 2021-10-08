@@ -4,7 +4,7 @@
             <img src="../assets/img/h1-img-01.jpg" alt="interview image">
             <div class="change-img d-flex align-items-center justify-content-around">
                 <img class="rotate" src="../assets/svg/svg-6.svg" alt="&larr;">
-                <img src="../assets/svg/svg-6.svg" alt="&larr;">
+                <img src="../assets/svg/svg-6.svg" alt="&rarr;">
             </div>
         </div>
         <div class="bickford-comment">
