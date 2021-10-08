@@ -54,6 +54,7 @@ p{
   font-size: 0.8rem;
   margin-bottom: 30px;
 }
+
 .red-line{
   width: 30px;
   height: 1px;
