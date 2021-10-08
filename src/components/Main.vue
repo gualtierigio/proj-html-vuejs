@@ -5,18 +5,21 @@
         <img class="svg-bg" src="../assets/svg/svg-4.svg" alt="svg background">
         <Bickford />
       </div>
+      <Events />
     </main>
 </template>
 
 <script>
 import OurSpecialties from './OurSpecialties.vue';
 import Bickford from './Bickford.vue';
+import Events from './Events.vue';
 
 export default {
   name: "Main",
   components: {
     OurSpecialties,
-    Bickford
+    Bickford,
+    Events
   },
   data() {
     return {
