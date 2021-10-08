@@ -1,5 +1,11 @@
 <template>
     <div class="page-wrap">
+        <div class="img-container">
+            <img src="../assets/img/h1-img-01.jpg" alt="interview image">
+        </div>
+        <div class="bickford-comment">
+
+        </div>
 
     </div>
 </template>
@@ -16,8 +22,30 @@ export default {
 
 .page-wrap{
   width: 70%;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 100px auto 0 auto;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.img-container{
+    height: 600px;
+    width: 720px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// text right part
+
+.bickford-comment{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: $total-white;
 }
 
 // specific implementation

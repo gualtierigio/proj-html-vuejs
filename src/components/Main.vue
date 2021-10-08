@@ -2,6 +2,7 @@
     <main>
       <div class="base-page">
         <OurSpecialties :propSpecialties="specialties" />
+        <img class="svg-bg" src="../assets/svg/svg-4.svg" alt="svg background">
         <Bickford />
       </div>
     </main>
@@ -53,8 +54,15 @@ export default {
 @import '../style/variables.scss';
 
 .base-page{
-  height: 100vh;
   background-color: $white-color-6;
+  position: relative;
+}
+
+.svg-bg{
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  filter: invert(9%) sepia(5%) saturate(21%) hue-rotate(357deg) brightness(88%) contrast(91%);
 }
 
 
